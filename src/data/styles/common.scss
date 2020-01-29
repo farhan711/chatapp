@@ -1,0 +1,1163 @@
+@import "./colors.scss";
+@import "./variables.scss";
+@import "./mixins.scss";
+
+/*---------------------  BASE RULE FOR PROJECT  ---------------------*/
+
+html {
+  font-size: 62.5%;
+
+  ::-webkit-scrollbar-track {
+    border-radius: 5px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: $default;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    background-color: $default;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: $font-color-light;
+  }
+}
+
+body {
+  font-family: $font-family-primary !important;
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-size: 14px !important;
+  font-size: 1.4rem !important; //1.4rem with 62.5% font-size = 14px
+  background-color: $default !important;
+}
+
+/*-------------------------- COMMON CSS --------------------------*/
+
+.wea-pointer {
+  cursor: pointer !important;
+}
+.wea-darken-border-hover:hover {
+  border: 2px solid #dae1e7 !important ;
+  border-radius: 5px !important;
+}
+
+.wea-bold-white-text-hover:hover {
+  // background: black !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+.wea-darken-item-focus:focus {
+  background: black !important;
+  color: white !important;
+  font-weight: 500 !important;
+}
+.ant-menu-item-selected {
+  background: white !important;
+  color: black !important;
+  font-weight: 600 !important;
+}
+
+.wea-darken-border-focus:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 5px !important;
+  border: 2px solid #888888 !important ;
+  background: white !important;
+}
+.wea-loader-line-height {
+  line-height: 1.3 !important;
+}
+
+.wea-line-height-1 {
+  line-height: 1;
+}
+
+.wea-zindex-1 {
+  z-index: 1;
+}
+
+.wea-zindex-150 {
+  z-index: 150;
+}
+
+.wea-opacity-medium {
+  opacity: 0.6;
+}
+
+.wea-link-primary {
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+    color: $primary !important;
+  }
+}
+
+.wea-line-through {
+  text-decoration: line-through;
+}
+
+.wea-bg-white {
+  background-color: $white !important;
+}
+
+.wea-bg-default {
+  background-color: $default !important;
+}
+
+.wea-bg-black-light {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.wea-bg-primary-light {
+  background-color: $primary-bg-light !important;
+}
+
+.wea-bg-primary-overlay {
+  background-color: $primary-overlay !important;
+}
+
+.wea-bg-green-light {
+  background-color: $green-bg-light;
+}
+
+.wea-bg-warning-light {
+  background-color: $warning-bg-light;
+}
+
+.wea-bg-info-light {
+  background-color: $info-bg-light;
+}
+
+.wea-bg-primary {
+  background-color: $primary !important;
+}
+
+.wea-bg-green {
+  background-color: $green !important;
+}
+.wea-bg-black {
+  background-color: black !important;
+}
+.wea-bg-info {
+  background-color: $info !important;
+}
+
+.wea-bg-warning {
+  background-color: $warning !important;
+}
+
+.wea-bg-danger {
+  background-color: $danger !important;
+}
+
+.wea-bg-yellow {
+  background-color: $yellow !important;
+}
+
+.wea-bg-magenta {
+  background-color: $magenta !important;
+}
+
+.wea-bg-violet {
+  background-color: $violet !important;
+}
+
+.wea-bg-red {
+  background-color: $red !important;
+}
+
+.wea-font-primary {
+  color: $primary !important;
+}
+
+.wea-font-white {
+  color: $white;
+}
+
+.wea-font-green {
+  color: $green;
+}
+
+.wea-font-info {
+  color: $info;
+}
+
+.wea-font-warning {
+  color: $warning;
+}
+
+.wea-font-danger {
+  color: $red;
+}
+
+.wea-font-light {
+  color: $font-color-light !important;
+}
+
+.wea-text-center {
+  text-align: center !important;
+}
+
+.wea-cursor-ptr {
+  cursor: pointer !important;
+}
+
+.wea-capitalize {
+  text-transform: capitalize;
+}
+
+.wea-capitalize-first::first-letter {
+  text-transform: capitalize;
+}
+
+.wea-uppercase {
+  text-transform: uppercase;
+}
+
+.wea-width-md {
+  width: $font-size-md !important;
+}
+
+.wea-width-lg {
+  width: $font-size-lg !important;
+}
+
+.wea-width-70 {
+  width: 70px;
+}
+
+.wea-quarter-width {
+  width: 25% !important;
+}
+
+.wea-half-width {
+  width: 50% !important;
+}
+
+.wea-full-width {
+  width: 100% !important;
+}
+
+.wea-full-height {
+  height: 100vh !important;
+}
+
+.wea-full-parent-height {
+  height: 100% !important;
+}
+
+.wea-full-min-height {
+  min-height: 100vh;
+}
+
+.wea-height-xxs {
+  height: $font-size-xxs;
+}
+
+.wea-height-xs {
+  height: $font-size-xs;
+}
+.wea-no-height {
+  height: 20px !important;
+}
+.wea-height-sm {
+  height: $font-size-sm;
+}
+
+.wea-height-md {
+  height: $font-size-md;
+}
+
+.wea-height-lg {
+  height: $font-size-lg;
+}
+
+.wea-height-xxl {
+  height: $font-size-xxl;
+}
+
+.wea-height-40 {
+  height: 40px !important;
+}
+
+.wea-height-60 {
+  height: 60px !important;
+}
+
+.wea-line-height-20 {
+  line-height: 20px !important;
+}
+
+.wea-relative {
+  position: relative !important;
+}
+
+.wea-absolute {
+  position: absolute !important;
+}
+
+.wea-align-full {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.wea-fixed {
+  position: fixed !important;
+}
+
+.wea-word-break {
+  word-break: break-word !important;
+}
+
+.wea-img-contain {
+  width: 100%;
+  height: 100%;
+}
+
+.wea-img-contain1 {
+  width: 90%;
+  height: 90%;
+}
+
+.wea-img-contain2 {
+  width: 90%;
+  height: 90%;
+
+  
+}
+
+
+.wea-border-none {
+  border: none !important;
+}
+
+.wea-l-border-light {
+  border-left: 1px solid $border-light;
+}
+
+.wea-l-border-primary {
+  border-left: 1px solid $primary;
+}
+
+.wea-r-border-light {
+  border-right: 1px solid $border-light;
+}
+
+.wea-b-border-light {
+  border-bottom: 2px solid lightgray !important;
+}
+
+.wea-border-dark {
+  border: 2px solid black !important;
+}
+
+.wea-t-border-light {
+  border-top: 1px solid $border-light;
+}
+
+.wea-border-light {
+  border: 1px solid $border-light;
+}
+
+.wea-border-primary {
+  border: 1px solid $primary;
+}
+
+.wea-border-radius-1 {
+  border-radius: 1px;
+}
+
+.wea-border-radius-4 {
+  border-radius: 4px;
+}
+
+.wea-border-radius-10 {
+  border-radius: 10px !important;
+}
+
+.wea-border-radius-15 {
+  border-radius: 15px !important;
+}
+
+.wea-border-bottom-thin {
+  border-bottom: 1px solid #f9f8eb !important;
+}
+.wea-border-top-thin {
+  border-top: 1px solid #f9f8eb !important;
+}
+.wea-border-right-thin {
+  border-right: 2px solid #f9f8eb !important;
+}
+.wea-border-left-thin {
+  border-left: 2px solid #f9f8eb !important;
+}
+.wea-border-radius-20 {
+  border-radius: 20px !important;
+}
+
+.wea-border-radius-half {
+  border-radius: 50% !important;
+}
+
+.wea-bubble-border-radius {
+  border-radius: 15px 15px 2px;
+}
+
+.wea-box-shadow-light {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+}
+
+.wea-box-shadow {
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+.wea-display-block {
+  display: block !important;
+}
+
+.wea-display-none {
+  display: none !important;
+}
+
+.wea-overflow-hidden {
+  overflow: hidden;
+}
+
+.wea-overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.wea-overflow-auto {
+  overflow: auto;
+}
+
+.wea-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.wea-rotate-270 {
+  transform: rotate(270deg);
+}
+
+.wea-transition-half {
+  transition: transform 500ms;
+}
+
+/*---------------------- FONT CLASSES -----------------------*/
+
+.wea-font-thin {
+  font-weight: $font-thin; //300
+}
+
+.wea-font-normal {
+  font-weight: $font-normal; //400
+}
+
+.wea-font-bold {
+  font-weight: $font-bold !important; //500
+}
+
+.wea-font-ultra-bold {
+  font-weight: $font-ultra-bold; //700
+}
+
+.wea-font-xxs {
+  font-size: $font-size-xxs !important; //10px
+}
+
+.wea-font-11 {
+  font-size: 11px !important; //10px
+}
+
+.wea-font-xs {
+  font-size: $font-size-xs !important; //12px
+}
+
+.wea-font-sm {
+  font-size: $font-size-sm !important; //14px
+}
+
+.wea-font-md {
+  font-size: $font-size-md !important; //16px
+}
+
+.wea-font-18 {
+  font-size: 18px !important; //18px
+}
+
+.wea-font-lg {
+  font-size: $font-size-lg !important; //20px
+}
+
+.wea-font-xl {
+  font-size: $font-size-xl !important; //24px
+}
+
+.wea-font-xxl {
+  font-size: $font-size-xxl !important; //30px
+}
+
+.wea-font-xxxl {
+  font-size: 45px !important;
+}
+
+/*---------------------- COMMON FLEX CLASSES --------------------- */
+
+.wea-flex {
+  display: flex;
+}
+
+.wea-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.wea-flex-row {
+  display: flex !important;
+  flex-direction: row;
+}
+
+.wea-flex-rr {
+  display: flex !important;
+  flex-direction: row-reverse;
+}
+
+.wea-flex-column {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.wea-flex-cr {
+  display: flex !important;
+  flex-direction: column-reverse;
+}
+
+.wea-flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.wea-flex-ac {
+  //flex-align-center
+  align-items: center;
+}
+
+.wea-flex-jc {
+  //flex-justify-center
+  justify-content: center;
+}
+
+.wea-flex-jsb {
+  //flex-justify-space-between
+  justify-content: space-between;
+}
+
+.wea-flex-jse {
+  //flex-justify-space-evenly
+  justify-content: space-evenly;
+}
+
+.wea-flex-jsa {
+  //flex-justify-space-around
+  justify-content: space-around;
+}
+
+.wea-flex-jfe {
+  //flex-justify-flex-end
+  justify-content: flex-end;
+}
+
+.wea-full-flex {
+  flex: 1;
+}
+
+/*---------------------- Custom Tag CLASSES----------------------*/
+
+.wea-custom-tag-green {
+  color: $green;
+  background-color: $green-bg-light;
+}
+
+/*---------------------- COMMON PADDING CLASSES----------------------*/
+//pad -> padding
+//l -> left
+//r -> right
+//t -> top
+//b -> bottom
+
+//---------------- padding-X -------------------
+
+.wea-no-pad {
+  padding: 0px !important;
+}
+
+.wea-pad-5 {
+  padding: 5px !important;
+}
+
+.wea-pad-8 {
+  padding: 8px !important;
+}
+
+.wea-pad-10 {
+  padding: 10px !important;
+}
+
+.wea-pad-15 {
+  padding: 15px !important;
+}
+
+.wea-pad-20 {
+  padding: 20px !important;
+}
+
+//---------------- left-right-padding-X -------------------
+
+.wea-no-lr-pad {
+  @include lr-padding(0px);
+}
+
+.wea-lr-pad-5 {
+  @include lr-padding(5px);
+}
+
+.wea-lr-pad-6 {
+  @include lr-padding(6px);
+}
+
+.wea-lr-pad-10 {
+  @include lr-padding(10px);
+}
+
+.wea-lr-pad-15 {
+  @include lr-padding(15px);
+}
+
+.wea-lr-pad-20 {
+  @include lr-padding(20px);
+}
+
+.wea-lr-pad-40 {
+  @include lr-padding(40px);
+}
+
+//---------------- top-bottom-padding-X --------------------
+
+.wea-no-tb-pad {
+  @include tb-padding(0px);
+}
+
+.wea-tb-pad-1 {
+  @include tb-padding(1px);
+}
+
+.wea-tb-pad-5 {
+  @include tb-padding(5px);
+}
+
+.wea-tb-pad-7 {
+  @include tb-padding(7px);
+}
+
+.wea-tb-pad-10 {
+  @include tb-padding(10px);
+}
+
+.wea-tb-pad-15 {
+  @include tb-padding(15px);
+}
+
+.wea-tb-pad-20 {
+  @include tb-padding(20px);
+}
+
+//----------------- left-padding-X -------------------
+
+.wea-no-l-pad {
+  padding-left: 0px !important;
+}
+
+.wea-l-pad-2 {
+  padding-left: 2px !important;
+}
+
+.wea-l-pad-5 {
+  padding-left: 5px !important;
+}
+
+.wea-l-pad-10 {
+  padding-left: 10px !important;
+}
+
+.wea-l-pad-15 {
+  padding-left: 15px !important;
+}
+
+//----------------- right-padding-X -------------------
+
+.wea-no-r-pad {
+  padding-right: 0px !important;
+}
+
+.wea-r-pad-3 {
+  padding-right: 3px !important;
+}
+
+.wea-r-pad-5 {
+  padding-right: 5px;
+}
+
+.wea-r-pad-10 {
+  padding-right: 10px;
+}
+
+.wea-r-pad-30 {
+  padding-right: 30px;
+}
+
+//----------------- top-padding-X -------------------
+
+.wea-no-t-pad {
+  padding-top: -5px !important;
+}
+.wea-t-pad-n-
+
+.wea-t-pad-3 {
+  padding-top: 3px;
+}
+
+.wea-t-pad-5 {
+  padding-top: 5px;
+}
+
+.wea-t-pad-10 {
+  padding-top: 10px;
+}
+
+.wea-t-pad-15 {
+  padding-top: 15px;
+}
+
+.wea-t-pad-20 {
+  padding-top: 20px;
+}
+.wea-t-pad-40 {
+  padding-top: 40px;
+}
+
+//----------------- bottom-padding-X -------------------
+
+.wea-no-b-pad {
+  padding-bottom: 0px !important;
+}
+
+.wea-b-pad-5 {
+  padding-bottom: 5px !important;
+}
+
+.wea-b-pad-10 {
+  padding-bottom: 10px !important;
+}
+
+.wea-b-pad-15 {
+  padding-bottom: 15px !important;
+}
+
+.wea-b-pad-40 {
+  padding-bottom: 40px !important;
+}
+
+/*---------------------------- COMMON MARGIN CLASSES-----------------------------*/
+//mrgn -> margin
+//l -> left
+//r -> right
+//t -> top
+//b -> bottom
+
+//----------------------- margin-X -------------------------
+
+.wea-no-mrgn {
+  margin: 0px !important;
+}
+
+.wea-mrgn-10 {
+  margin: 10px;
+}
+
+.wea-mrgn-20 {
+  margin: 20px;
+}
+
+//---------------- left-right-margin-X -------------------
+
+.wea-no-lr-mrgn {
+  @include lr-margin(0px);
+}
+
+.wea-lr-mrgn-5 {
+  @include lr-margin(5px);
+}
+
+.wea-lr-mrgn-15 {
+  @include lr-margin(15px);
+}
+
+//---------------- top-bottom-margin-X --------------------
+
+.wea-no-tb-mrgn {
+  @include tb-margin(0px);
+}
+
+.wea-tb-mrgn-5 {
+  @include tb-margin(5px);
+}
+
+.wea-tb-mrgn-15 {
+  @include tb-margin(15px);
+}
+
+//------------------- left-margin-X ---------------------
+
+.wea-no-l-mrgn {
+  margin-left: 0px !important;
+}
+
+.wea-l-mrgn-5 {
+  margin-left: 5px !important;
+}
+
+.wea-l-mrgn-10 {
+  margin-left: 10px;
+}
+
+.wea-l-mrgn-15 {
+  margin-left: 15px !important;
+}
+
+.wea-l-mrgn-7 {
+  margin-left: 7% !important;
+}
+
+//-------------------- right-margin-X ---------------------
+
+.wea-no-r-mrgn {
+  margin-right: 0px !important;
+}
+
+.wea-r-mrgn-3 {
+  margin-right: 3px !important;
+}
+
+.wea-r-mrgn-5 {
+  margin-right: 5px !important;
+}
+
+.wea-r-mrgn-10 {
+  margin-right: 10px !important;
+}
+
+.wea-r-mrgn-15 {
+  margin-right: 15px;
+}
+
+.wea-r-mrgn-20 {
+  margin-right: 20px;
+}
+.wea-r-mrgn-50 {
+  margin-right: 50px;
+}
+
+.wea-r-mrgn-40 {
+  margin-right: 40px;
+}
+//----------------------- top-margin-X ----------------------
+
+.wea-no-t-mrgn {
+  margin-top: 0px !important;
+}
+
+.wea-t-mrgn-5 {
+  margin-top: 5px;
+}
+
+
+.wea-t-mrgn-10 {
+  margin-top: 10px;
+}
+
+.wea-t-mrgn-20 {
+  margin-top: 20px;
+}
+
+
+.wea-t-mrgn-50 {
+  margin-top: 50px;
+}
+
+.wea-t-mrgn-230 {
+  margin-top: 230px;
+}
+
+.wea-t-mrgn-25 {
+  margin-top: 25%;
+}
+
+.wea-t-mrgn-24 {
+  margin-top: 24%;
+}
+
+.wea-t-mrgn-29 {
+  margin-top: 28.5%;
+}
+
+.wea-t-mrgn-18 {
+  margin-top: 18%;
+}
+//------------------------- bottom-margin-X -----------------------
+
+.wea-no-b-mrgn {
+  margin-bottom: 0px !important;
+}
+
+.wea-b-mrgn-4 {
+  margin-bottom: 4px;
+}
+
+.wea-b-mrgn-5 {
+  margin-bottom: 5px;
+}
+
+.wea-b-mrgn-10 {
+  margin-bottom: 10px;
+}
+
+.wea-b-mrgn-15 {
+  margin-bottom: 15px;
+}
+
+.wea-b-mrgn-20 {
+  margin-bottom: 20px !important;
+}
+
+//---------------------------- entity specific css --------------------
+
+.entity-0 {
+  background-color: $magenta !important;
+}
+
+.entity-1 {
+  background-color: $green !important;
+}
+
+.entity-2 {
+  background-color: $warning !important;
+}
+
+.entity-3 {
+  background-color: $danger !important;
+}
+
+.entity-4 {
+  background-color: $info !important;
+}
+
+.entity-5 {
+  background-color: $red !important;
+}
+
+.entity-6 {
+  background-color: $black !important;
+}
+
+//---------------------------- mobile specific css --------------------
+
+@media only screen and (max-width: 767px) {
+  .wea-mobile-hidden {
+    display: none !important;
+  }
+
+  .wea-mobile-pad-5 {
+    padding-bottom: 5px;
+  }
+
+  .wea-flex-to-column {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+//--------------------------- desktop specific css -----------------------
+
+@media only screen and (min-width: 768px) {
+  .wea-desktop-hidden {
+    display: none !important;
+  }
+}
+
+//-------------------- special css : dont use it directly --------------------
+
+.wea-zindex-150 {
+  z-index: 150;
+}
+
+.wea-align-avatar-letter {
+  // to fix avatar letter align  issue
+  .ant-avatar-string {
+    position: unset !important;
+    transform: scale(1) !important;
+    text-align: center;
+  }
+}
+
+//---------------------------float classes-----------------------------------------//
+.wea-float-left {
+  float: left !important;
+}
+
+.wea-float-right {
+  float: right !important;
+}
+
+//---------------------------------modified antd classes-----------------------------//
+.ant-tabs-nav .ant-tabs-tab-active {
+  color: black;
+  font-weight: 500;
+  border-bottom: black;
+}
+
+.ant-tabs-nav .ant-tabs-tab:hover {
+  color: black;
+  font-weight: 500;
+}
+
+.ant-radio-inner::after {
+  background-color: black;
+}
+
+.ant-radio-checked .ant-radio-inner {
+  border-color: black;
+}
+
+.ant-radio-checked .ant-radio-inner {
+  border: 1px solid black;
+}
+
+.ant-btn-primary:hover,
+.ant-btn-primary:focus {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.ant-btn-primary {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.ant-btn-dblue {
+  color: #fff;
+  background-color: rgb(25, 79, 160);
+  border-radius: 25px;
+  
+}
+
+.ant-btn-red {
+  color: #fff;
+  background-color: rgb(185, 36, 36);
+  border-radius: 25px;
+}
+
+.ant-btn-green {
+  color: #fff;
+  background-color: rgb(67, 175, 57);
+  border-radius: 25px;
+}
+
+// .ant-select-selection:hover {
+//   border-color: #dae1e7;
+// }
+// .ant-select-selection:focus {
+//   border-color: black;
+//   box-shadow: none !important;
+// }
+// .ant-select-selection:active {
+//   border-color: black;
+// }
+
+// .ant-input:hover {
+//   border: 2px solid #dae1e7 !important;
+//   border-radius: 5px !important;
+// }
+
+// .ant-modal-header {
+//   background: none;
+// }
+.ant-modal-content {
+  background: #ececec;
+}
+
+.ant-menu-item::after {
+  border-right: none !important;
+}
+.ant-menu-item:hover {
+  color: white;
+}
+
+.round-corners {
+  border-radius: 15px;
+  border: 1px solid whitesmoke;
+  padding: 20px;
+  width: 200px;
+  height: 350px;
+}
+
+.gradient{
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 52%,
+   rgba(255,255,255,0.8886905103838411) 98%, rgba(243,247,246,0.7906512946975666) 98%);
+  }
+
+.gradient2
+{
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,0.014740930551908282) 79%,
+   rgba(241,241,241,1) 94%, rgba(245,245,245,1) 100%, rgba(242,240,240,1) 108%);
+
+ }
+.bgcolor
+{
+  background-color: #ececec8c;
+}  
+
+.card1
+{
+  z-index: 1
+                      
+
+}
+
+.card2
+{
+  z-index: 2
+}
+
+.pos 
+{ position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.shadow
+{-webkit-box-shadow: -2px 4px 30px -6px rgba(0,0,0,0.46);
+-moz-box-shadow: -2px 4px 30px -6px rgba(0,0,0,0.46);
+box-shadow: -2px 4px 30px -6px rgba(0,0,0,0.46); }
+
+.ant-menu-root.ant-menu-vertical{
+  display:table !important
+}

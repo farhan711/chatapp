@@ -1,0 +1,30 @@
+.msg-input{
+    background: #ececec;
+    word-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.icon-img-wrapper{
+    width: 20px;
+    height: 20px;
+}
+.icon-wrapper{
+    width: 40px;
+    height: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon-btn:hover{
+    background: #ececec;
+}
+//.msg-input:focus{
+// background: #ffffff;
+// color: white;
+// word-wrap: break-word;
+// word-break: break-all;
+// color: black;
+// }

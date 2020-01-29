@@ -1,0 +1,28 @@
+export const CREATE_USER = 'create_user';
+export const UPDATE_USER = 'update_user';
+export const GET_USER_DETAILS = "get_user_details";
+
+export const LOGIN_DETAILS = "login_details";
+export const JOINED_TO_CHATROOM = "chatroom_details";
+export const AUTH_LOADING = "AUTH_LOADING";
+export const AUTH_LOADED = "AUTH_LOADED";
+export const CREATING_USER_LOADING = "CREATING_USER_LOADING";
+export const CREATING_USER_LOADED = "CREATING_USER_LOADED";
+export const FORGOT_PASSWORD_LOADING = "FORGOT_PASSWORD_LOADING";
+export const FORGOT_PASSWORD_LOADED= "FORGOT_PASSWORD_LOADED";
+export const TOKEN_VERIFIED_LOADING = "TOKEN_VERIFIED_LOADING";
+export const TOKEN_VERIFIED_LOADED = "TOKEN_VERIFIED_LOADED";
+export const RESET_PASSWORD_LOADING = "RESET_PASSWORD_LOADING";
+export const RESET_PASSWORD_LOADED = "RESET_PASSWORD_LOADED";
+export const VERIFYING_OTP = "VERIFYING_OTP";
+export const OTP_VERIFIED = "OTP_VERIFIED";
+export const SIGNUP_USER_DETAILS = "SIGNUP_USER_DETAILS"
+
+
+
+
+
+
+
+
+

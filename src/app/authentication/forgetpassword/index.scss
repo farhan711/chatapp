@@ -1,0 +1,33 @@
+.create-workspace-form-container {
+    width: 400px;
+    min-height: 330px;
+    padding-top: 20px !important;
+    background: white;
+  }
+
+  .header-bar{
+    float:left;
+  }
+  .create-workspace-form-image{
+    width: 100%;
+  }
+
+  .create-workspace-form-container2{
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+  .findworkspace-btn:hover{
+    background-color: grey !important;
+  }
+  .avatar-header{
+    width: 53%;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .avatar-header{
+      width: 40%;
+    }
+    .header{
+      margin-left: 0%;
+    }
+}

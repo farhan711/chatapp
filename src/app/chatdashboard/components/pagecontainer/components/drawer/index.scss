@@ -1,0 +1,51 @@
+.sider {
+  // background-color: blue !important;
+  opacity: 0.7 !important;
+  // background-image: url('../../data/assets/img/5.jpeg');
+  // filter: blur(4px);
+  // -webkit-filter: blur(5px);
+  // background-size: cover;
+  // background-position: center;
+}
+.sider-img {
+  // background-image: url("../../../../../../data/assets/img/5.jpeg");
+  background-image: url("../../../../../../data/assets/img/5.jpeg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  // background-size: cover;
+}
+.sider-bg {
+  // background-image: url("../../data/assets/img/5.jpeg");
+  background: rgba(0, 0, 0, 0.7);
+
+  /* Add the blur effect */
+  // filter: blur(8px);
+  // -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  //   transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 100%;
+}
+
+.drawer {
+  background-color: black;
+}

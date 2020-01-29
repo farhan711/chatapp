@@ -1,0 +1,107 @@
+.menuitemgroupsection {
+  // width: 0 !important;
+  height: 218px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.menuitemgroupsection::-webkit-scrollbar{
+  display: none;
+}
+
+.menuitemselected::after {
+  border-right: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+#app_sider_wrapper {
+  border-right: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  //   transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  background: rgba(0, 0, 0, 0) !important;
+}
+
+#app-sider-wrapper:hover {
+  color: white;
+  font-weight: 500;
+}
+
+.sider {
+  // background-color: blue !important;
+  opacity: 0.7 !important;
+  // background-image: url('../../data/assets/img/5.jpeg');
+  // filter: blur(4px);
+  // -webkit-filter: blur(5px);
+  // background-size: cover;
+  // background-position: center;
+}
+.sider-img {
+  // background-image: url("../../../../../../data/assets/img/5.jpeg");
+  background-image: url("../../data/assets/img/5.jpeg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  // background-size: cover;
+}
+.sider-bg {
+  // background-image: url("../../data/assets/img/5.jpeg");
+  background: rgba(0, 0, 0, 0.7);
+
+  /* Add the blur effect */
+  // filter: blur(8px);
+  // -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  //   transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 100%;
+}
+li.ant-menu-item.wea-line-height-20.wea-no-height.wea-capitalizewea-font-lg.ant-menu-item-active{
+  background-color: white !important;
+  color: black !important;
+}
+
+li.ant-menu-item.wea-line-height-20.wea-no-height.wea-capitalizewea-font-sm.ant-menu-item-active{
+  background-color: white !important;
+  color: black !important;
+}
+
+.ant-menu-item:hover, .ant-menu-item-active, .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-submenu-active, .ant-menu-submenu-title:hover {
+  color: white;
+}
+
+.name-arrow-flex{
+  display: flex;
+  flex-direction: row;
+}

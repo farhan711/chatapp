@@ -1,0 +1,15 @@
+.login-form-button {
+  width: 100%;
+  background: black !important;
+  border: none;
+  box-shadow: 0 4px 8px 0 grey;
+  opacity: 1 !important;
+}
+
+.login-form-button:hover {
+  background-color: grey !important;
+}
+
+.login-form-forget {
+  cursor: pointer;
+}

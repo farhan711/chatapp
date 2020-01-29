@@ -1,0 +1,68 @@
+@import "./keyframes.scss";
+
+.wea-card-loading {
+    // display: block;
+    border-radius: 2px;
+    background: linear-gradient(90deg, rgba(240, 240, 240, 0.2), rgba(180, 180, 180, 0.4), rgba(240, 240, 240, 0.2));
+    background-size: 600% 600%;
+
+    @include animation(wea-card-loading 1.5s ease infinite);
+}
+
+.wea-animated {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.wea-infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.wea-fade-in {
+    @include animation(wea-fade-in 1s);
+}
+
+.wea-fade-in-left {
+    @include animation(wea-fade-in-left 1s);
+}
+
+.wea-fade-in-right {
+    @include animation(wea-fade-in-right 1s);
+}
+
+.wea-fade-in-up {
+    @include animation(wea-fade-in-up 1s);
+}
+
+.wea-fade-out {
+    @include animation(wea-fade-out 1s);
+}
+
+.wea-fade-out-left {
+    @include animation(wea-fade-out-left 1s);
+}
+
+.wea-fade-out-right {
+    @include animation(wea-fade-out-right 1s);
+}
+
+.wea-fade-out-down {
+    @include animation(wea-fade-out-down 1s);
+}
+
+.wea-fade-out-up {
+    @include animation(wea-fade-out-up 0.5s);
+}
+
+.wea-zoom-in {
+    @include animation(wea-zoom-in 1s);
+}
+
+.wea-zoom-out {
+    @include animation(wea-zoom-out 1s);
+}
+
+.wea-translate-down {
+    @include animation(wea-translate-down 0.5s);
+}

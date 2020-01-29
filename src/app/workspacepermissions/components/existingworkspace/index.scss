@@ -1,0 +1,75 @@
+.existing-workspace{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding-bottom: -5px;
+    margin-left: 60;
+}
+
+
+@media only screen and (max-width: 767px){
+    .existing-workspace{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+
+ .switch-spacing {
+      padding-left: 8%;
+      margin-bottom: 30px;
+      
+  }
+  
+.switch-spacing-vertical{
+    padding-bottom: 15px;
+    
+}
+
+
+.switch-space{
+    margin-top: 5%
+}
+.switch-position-global{
+    padding-left: 20px;
+    // margin-bottom: 30px;
+}
+.switch-position-private{
+    padding-right: 20px;
+    // margin-bottom: 30px;
+}
+.switch-on{
+    display:flex;
+    flex-flow:row;
+    width:100%;
+    height:100%;
+    justify-content: flex-end; 
+    vertical-align: text-top;
+    padding-top: 17px;
+    padding-bottom: -10px;   
+}
+
+.switch-space-column{
+    display:flex;
+    flex-direction:column;
+    // width:100%;
+    // height:100%;
+}
+.align-center{
+    // display:flex;
+    // flex-direction:column;
+    padding-left:47%;
+    padding-right:2%;
+    width:100%;
+    height:100%;
+}
+
+.ant-switch {
+    background-color: green !important;
+}
+
+.bold {
+    font-weight: bold;
+}
